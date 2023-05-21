@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form1</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(74, 5, 5);
+            font-family: cursive;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid white;
+            background-color: rgb(224, 200, 78);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;color: white;">USER REGISTRATION</h1>
+
+    <table style="text-align: center;width: 600px;">
+        <tr style="text-align: center;">
+            <td colspan="2">Personal Details</td>
+        </tr>
+        <tr>
+            <td><label for="FirstName">FirstName</label></td>
+            <td style="text-align: left;"><input type="text" id="FirstName"></td>
+        </tr>
+        <tr>
+
+            <td><label for="LastName">LastName</label></td>
+            <td style="text-align: left;"><input type="text" id="LastName"></td>
+        </tr>
+        <tr>
+            <td><label for="email">E-mail</label></td>
+            <td style="text-align: left;"><input type="email" id="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="Address">Address</label></td>
+            <td style="text-align: left;"><input type="text" id="Address" maxlength="30"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender</label></td>
+            <td><label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="Other">Other</label>
+                <input type="radio" name="gender" id="Other" value="Other">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth</label></td>
+            <td style="text-align: left;"><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="state">State</label></td>
+            <td style="text-align: left;"><select name="state" id="state">
+                    <option value="Selectyourstate" disabled>Select your state</option>
+                    <option value="AndhraPradesh">Andhra Pradesh</option>
+                    <option value="ArunachalPradesh">Arunachal Pradesh</option>
+                    <option value="Jammu&Kashmir">Jammu& Kashmir</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana" selected>Telangana</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="country">Country</label></td>
+            <td style="text-align: left;"><select name="country" id="state">
+                    <option value="Selectyourcountry" disabled>Select your Country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="France">France</option>
+                    <option value="India" selected>India</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="UK">Mexico</option>
+                    <option value="UK">Japan</option>
+                </select>
+        </tr>
+        <tr>
+            <td><label for="mobnumber">Mobile Number</label></td>
+            <td style="text-align: left;"><input type="text" id="mobnumber"></td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2">Educational Details</td>
+        </tr>
+        <tr>
+            <td><label for="clgname">College Name</label></td>
+            <td style="text-align: left;"><input type="text" id="clgname"></td>
+        </tr>
+        <tr>
+            <td><label for="branch">Branch</label></td>
+            <td style="text-align: left;"><select name="branch" id="branch">
+                    <option value="Selectyourbranch" disabled>Select your Branch</option>
+                    <option value="AIML" selected>CSE-AIML</option>
+                    <option value="CSE">CSE</option>
+                    <option value="Civil">Civil</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="Mech">Mechanical</option>
+                    <option value="Biotech">Biotech</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td><label for="year">Year of Study</label></td>
+            <td style="text-align: left;"><input type="number"></td>
+        </tr>
+        <tr>
+            <td><label for="hidden">College Id</label></td>
+            <td><input type="hidden" id="hidden"></td>
+        </tr>
+        <tr>
+            <td><label for="file">Upload Memo</label></td>
+            <td style="text-align: left;"><input type="file"></td>
+        </tr>
+        <!--<tr>
+        <td colspan="2">Payment Details</td>
+    </tr>
+    <tr>
+        <td><label for="payment">Method of Payment</label></td>
+        <td><label for="UPI">UPI</label>
+            <input type="radio" id="UPI" name="payment" value="UPI"></td>
+            <label for="credit">Credit Card</label>
+            <input type="radio" id="credit" name="payment" value="credit"></td>
+            <label for="Debit">Debit Card</label>
+            <input type="radio" id="Debit" name="payment" value="debit"></td>
+    </tr>-->
+        <tr>
+            <td><label for="password">Enter Password</label></td>
+            <td style="text-align: left;"><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Re-enter Password</label></td>
+            <td style="text-align: left;"><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><label for="check">Select all options</label></td>
+            <td style="text-align: left;"><input type="checkbox" id="check" name="check">
+                <label for="check">All the details filled are correct.</label>
+                <br>
+                <input type="checkbox" id="check" name="check">
+                <label for="check">I agree to all the terms and conditions.</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="img">Image</label></td>
+            <td><input type="image" src="inputimg.png" id="img" height="40px" width="40px"></td>
+        </tr>
+        <tr>
+            <td><input type="reset"></td>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+

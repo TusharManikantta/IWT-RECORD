@@ -1,0 +1,10 @@
+<root>
+    <oracle:employee xmlns:oracle="www.mywebsite.com/oracle">
+        <oracle:eid> 1001 </oracle:eid>
+        <oracle:ename> ABC </oracle:ename>
+    </oracle:employee>
+    <IBM:employee xmlns:IBM="www.yourwebsite.com/IBM">
+        <IBM:empname> XYZ </IBM:empname>
+        <IBM:empcountry> 2000 </IBM:empcountry>
+    </IBM:employee>
+</root>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table{
+                text-align: center;
+            }
+            table,th,td{
+                border: 1px solid rgb(74, 74, 170);
+                border-collapse:collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Types of Tables</h1>
+        <table id="table1">
+            <caption>Table-1</caption>
+            <tr>
+                <td>d11</td>
+                <td>d12</td>
+            </tr>
+            <tr>
+                <td>d21</td>
+                <td>d22</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table id="table2">
+            <caption>Table-2</caption>
+            <tr>
+                <td colspan="2">d11</td>
+                <td>d12</td>
+                <td>d13</td>
+            </tr>
+            <tr style="border-collapse:collapse">
+                <td>d21</td>
+                <td>d22</td>
+                <td colspan="2">d23</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table id="table3">
+            <caption>Table-3</caption>
+            <tr>
+                <td rowspan="2">d11</td>
+                <td>d12</td>
+                <td rowspan="3">d13</td>
+            </tr>
+            <tr>
+                <td>d21</td>
+            </tr>
+            <tr>
+                <td>d31</td>
+                <td>d32</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table id="table4">
+            <caption>Table-4</caption>
+            <tr>
+                <td>d11</td>
+                <td>d12</td>
+                <td>d13</td>
+                <td>d14</td>
+            </tr>
+            <tr>
+                <td>d21</td>
+                <td rowspan="2" colspan="2">d22</td>
+                <td rowspan="2">d23</td>
+            </tr>
+            <tr>
+                <td>d31</td>
+            </tr>
+            <tr>
+                <td>d41</td>
+                <td>d42</td>
+                <td>d43</td>
+                <td>d44</td>
+            </tr>
+        </table>
+    </body>
+</html>

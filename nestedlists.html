@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LISTS</title>
+        <style>
+            #list li{
+                list-style:None;
+            }
+            #list li::before{
+                content:"\25AA";
+                color:red
+            }
+        </style>
+    </head>
+    <body>
+        <h2>
+            Multilevel Lists</h2>
+            <ul>
+                <li>Bullet one</li>
+                <li>Bullet Two
+                    <ul>
+                        <li>SUb of bullet two</li>
+                        <li>Another Sub</li>
+                    </ul>
+                </li>
+                <li>Bullet Three</li>
+                <li>Bullet Four</li>
+            </ul>
+        <h2>Ordered Lists</h2>
+        <ol >
+            <li>First</li>
+            <li>Second
+                <ol type="a">
+                    <li>Sub of Second</li>
+                    <li>Another Sub</li>
+                </ol>
+            </li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ol>
+        <h2>Fruits List</h2>
+        <ol>
+            <li>Fruits
+                <ol>
+                    <li>Mango</li>
+                    <li>Orange</li>
+                </ol>
+            </li>
+            <li>Vegetables
+                <ol>
+                    <li>Cabbage</li>
+                    <li>Capsicum
+                        <ol>
+                            <li>Green Capsicum</li>
+                            <li>Yellow Capsicum</li>
+                            <li>Red Capsicum</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <h2>nested list sample</h2>
+        <ol type="I">
+            <li>List Item 1
+                <ol type="a">
+                    <li>Nested item 1.1</li>
+                    <li>Nested item 1.2</li>
+
+                </ol>
+            </li>
+            <li>List Item 2
+                <ol>
+                    <li>Nested Item 2.1</li>
+                    <li>Nested Item 2.2
+                        <ul type="circle">
+                            <li>Nested Item 2.2.1</li>
+                            <li>Nested Item 2.2.2
+                                <ul type="square">
+                                    <li>Nested Item 2.2.2.1</li>
+                                    <li>Nested Item 2.2.2.2</li>
+                                </ul>
+                            </li>
+                            <li>Nested Item 2.2.3</li>
+
+                        </ul>
+                    </li>
+                    <li>Nested Item 2.3</li>
+                </ol>
+            </li>
+            <li>Listed Item 3
+                <ul type="disc">
+                    <li>Nested Item 3.1</li>
+                    <li>Nested Item 3.2</li>
+                    <li>Nested Item 3.3</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Item List</h2>
+        <ul type="square" style="text-decoration: underline;color: rgb(35, 35, 241);" id="list">
+            <li> item 3</u></li>
+            <li> item 4</u>
+                <ul type="square;">
+                    <li>sub-item 1</u></li>
+                    <li>sub-item 2</u></li>
+                    <li>sub-item 3</u>
+                        <ul type="square">
+                            <li>sub-sub-item 1</u></li>
+                            <li>sub-sub-item 2</u></li>
+                            <li>sub-sub-item 3</u>
+                                <ul type="square">
+                                    <li>sub-sub-sub-item 1</u></li>
+                                    <li>sub-sub-sub-item 2</u></li>
+                                    <li>sub-sub-sub-item 3</u></li>
+                                    <li>sub-sub-sub-item 3</u></li>
+                                
+                                </ul>
+                            </li>
+                            <li>sub-sub-item 4</u></li>
+                        </ul>
+                        </li>
+                    <li>sub-item 4</u></li>
+                </ul>
+            </li>
+            <li> item 5</u></li>
+        </ul>
+        <h2>Nested Unordered Lists</h2>
+        <ul type="disc">
+            <li>Programmng Languages
+                <ul type="circle">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </li>
+            <li>DSA
+                <ul type="circle">
+                    <li>Array</li>
+                    <li>Linked Lists</li>
+                    <li>stack</li>
+                    <li>Queue</li>
+                    <li>Trees</li>
+                    <li>Graphics</li>
+                </ul>
+            </li>
+            <li>Web Technologies
+                <ul type="circle">
+                    <li>IITML</li>
+                    <li>CSS</li>
+                    <li>JavaScript
+                        <ul type="square">
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>Voe</li>
+                        </ul>
+                    </li>
+                    <li>Bootstrap</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

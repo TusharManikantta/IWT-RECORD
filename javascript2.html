@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center;">
+<h1>FORM</h1>
+<label for="name">Enter your name</label>
+<input type="text" onfocus="myFunction(this)" required>
+<br>
+<br>
+<button onfocus="myfunction(this)" onclick="myfunc(this)" id="button">submit</button>
+<script>
+function myFunction(x) {
+  x.style.background = "cadetblue";
+}
+function myfunc(y){
+    const myElement = document.getElementById("button");
+    myElement.style.color = "green";
+    myElement.style.alignItems="center";
+    if (confirm("Do you want to submit?")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+} 
+    document.write("The form is successfully submitted!!")
+}
+</script>
+
+</body>
+</html>

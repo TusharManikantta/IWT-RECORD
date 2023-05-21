@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  let a,b;
+   a= prompt("Please enter a number:");
+   b=prompt("Please enter a number");
+   let op=prompt("Enter the operation:(add/sub/mul/div)");
+   a=parseInt(a)
+   b=parseInt(b)
+  if (op=='add') {
+    text = a+b;
+  }
+  else if (op=='sub'){
+    text=a-b;
+  }
+  else if (op=='mul'){
+  }
+  else if(op=='div'){
+    text=a/b;
+  }
+  else{
+    text='Enter valid numbers!!!'
+  }
+  document.getElementById("cal").innerHTML = 'Result: '+text;
+}
+</script>
+</head>
+<body style="text-align: center;">
+<h1>Prompt window</h1>
+<button onclick="myFunction()"> Use Calculator</button>
+<p id="cal"></p>
+</body>
+</html>
